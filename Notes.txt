@@ -1,3 +1,5 @@
 
 1. 
 2. rendering workouts, calories and minutes, this view will have 3 different views, each of these views will have 2 Text in them
+
+Pressable so that we can press on that card and move to the next screen

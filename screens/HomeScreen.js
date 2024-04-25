@@ -1,9 +1,10 @@
-import { SafeAreaView, StyleSheet, Text, View, Image} from "react-native";
+import { ScrollView, StyleSheet, Text, View, Image, SafeAreaView} from "react-native";
 import React from "react";
+import FitnessCards from "../components/FitnessCards";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={{ marginTop: 50 }}>
+    <SafeAreaView style={{marginTop:40}}>
       <View style={styles.homeWorkout}>
         <Text style={{ color: "white", fontWeight: "bold", fontSize: 18 }}>
           HOME WORKOUT
@@ -44,8 +45,9 @@ const HomeScreen = () => {
             }}
           />
           </View>
+          <FitnessCards/>
       </View>
-    </SafeAreaView>
+   </SafeAreaView>
   );
 };
 
