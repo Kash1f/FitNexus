@@ -33,9 +33,9 @@ const HomeScreen = () => {
         <View style={{justifyContent:"center", alignItems:"center"}}>
         <Image
             style={{
-              width: "90%",
+              width: 300,
               height: 120,
-              marginTop: 20,
+              
               borderRadius: 7,
             
 
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#CD853F",
     padding: 10,
     height: 200,
-    width: "100%",
+    width: 415,
   },
 
   parentView:{

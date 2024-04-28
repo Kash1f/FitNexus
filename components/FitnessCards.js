@@ -1,14 +1,24 @@
 import { StyleSheet, Text, View, Pressable, Image, ScrollView } from "react-native";
 import React from "react";
 import fitness from "../data/fitness";
+import { useNavigation } from "@react-navigation/native";
 
 const FitnessCards = () => {
   const FitnessData = fitness;
+  
+  //initalizing navigation to navigate to the workoutscreen
+  const navigation = useNavigation();
 
   return (
     <View>
       {FitnessData.map((item, key) => (
-        <Pressable style={styles.pressable} key={key}>
+        <Pressable 
+        //here we will provide the name of the screen to which we want to navigate 
+        onPress={()=> navigation.navigate("Workout",{
+          image:item.image, 
+          excersises:item.excersises,
+        })}
+        style={styles.pressable} key={key}>
           <Image style={styles.image} source={{ uri: item.image }} />
 
           <Text style={styles.fitnessCardName}>{item.name}</Text>
@@ -29,7 +39,7 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: "95%",
+    width: 350,
     height: 140,
     borderRadius: 7,
   },
