@@ -33,9 +33,8 @@ const HomeScreen = () => {
         <View style={{justifyContent:"center", alignItems:"center"}}>
         <Image
             style={{
-              width: 300,
+              width: "90%",
               height: 120,
-              
               borderRadius: 7,
             
 

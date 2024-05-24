@@ -4,6 +4,8 @@ import fitness from "../data/fitness";
 import { useNavigation } from "@react-navigation/native";
 
 const FitnessCards = () => {
+
+
   const FitnessData = fitness;
   
   //initalizing navigation to navigate to the workoutscreen
@@ -17,6 +19,7 @@ const FitnessCards = () => {
         onPress={()=> navigation.navigate("Workout",{
           image:item.image, 
           excersises:item.excersises,
+          id:item.id,
         })}
         style={styles.pressable} key={key}>
           <Image style={styles.image} source={{ uri: item.image }} />
@@ -24,7 +27,7 @@ const FitnessCards = () => {
           <Text style={styles.fitnessCardName}>{item.name}</Text>
         </Pressable>
       ))}
-      <Text>FitnessCards</Text>
+      
     </View>
   );
 };
@@ -40,7 +43,7 @@ const styles = StyleSheet.create({
 
   image: {
     width: 350,
-    height: 140,
+    height: 130,
     borderRadius: 7,
   },
 
