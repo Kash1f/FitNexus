@@ -18,11 +18,10 @@ const FitnessContext = ({ children }) => {
         setCalories,
         minutes,
         setMinutes,
-      }}
-    >
+    }}>
       {children}
     </FitnessItems.Provider>
   );
 };
 
-export {FitnessContext,FitnessItems}
+export { FitnessContext, FitnessItems };
