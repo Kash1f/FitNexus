@@ -2,10 +2,11 @@
 1. 
 2. rendering workouts, calories and minutes, this view will have 3 different views, each of these views will have 2 Text in them
 
+For every item in our FitnessData we are going to render a pressable
+
 Pressable so that we can press on that card and move to the next screen
 
-
-OnPress of each of the fitness cards we should be taken to the next screen and we will show different forms of exercies regarding that fitness card. so onpress event will be used in fitnesscards.
+OnPress of each of the fitness cards we should be taken to the next screen and we will show different forms of exercies regarding that fitness card. so onpress event will be used in fitnesscards. In this case rendering images without using Pressable with it will not make them pressable or clickable
 
 "Workout":
 This is the name of the screen to which you want to navigate. In React Navigation, screens are typically defined with unique names (route names) that you use for navigation.

@@ -1,8 +1,17 @@
 import { ScrollView, StyleSheet, Text, View, Image, SafeAreaView} from "react-native";
-import React from "react";
+import React, { useContext } from "react";
 import FitnessCards from "../components/FitnessCards";
 
 const HomeScreen = () => {
+
+  const {
+   
+    minutes,
+  
+    calories,
+
+    workout,
+  } = useContext(FitnessItems);
   return (
     <SafeAreaView style={{marginTop:40}}>
       <View style={styles.homeWorkout}>
@@ -16,16 +25,16 @@ const HomeScreen = () => {
 
         <View style={styles.parentView}>
           <View>
-            <Text style={styles.textOne}>0</Text>
+            <Text style={styles.textOne}>{workout}</Text>
             <Text style={styles.textTwo}>WORKOUTS</Text>
           </View>
 
           <View>
-            <Text style={styles.textThree}>0</Text>
+            <Text style={styles.textThree}>{calories}</Text>
             <Text style={styles.textFour}>KCAL</Text>
           </View>
           <View>
-            <Text style={styles.textFive}>0</Text>
+            <Text style={styles.textFive}>{minutes}</Text>
             <Text style={styles.textSix}>MINS</Text>
           </View>
         </View>

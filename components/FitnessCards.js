@@ -13,6 +13,9 @@ const FitnessCards = () => {
 
   return (
     <View>
+
+     {/* For every item in our FitnessData we are going to render a pressable so that we can press on that card and move to the next screen */}
+
       {FitnessData.map((item, key) => (
         <Pressable 
         //here we will provide the name of the screen to which we want to navigate 
@@ -22,6 +25,7 @@ const FitnessCards = () => {
           id:item.id,
         })}
         style={styles.pressable} key={key}>
+
           <Image style={styles.image} source={{ uri: item.image }} />
 
           <Text style={styles.fitnessCardName}>{item.name}</Text>
