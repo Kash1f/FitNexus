@@ -1,6 +1,7 @@
 import { ScrollView, StyleSheet, Text, View, Image, SafeAreaView} from "react-native";
 import React, { useContext } from "react";
 import FitnessCards from "../components/FitnessCards";
+import { FitnessItems } from "../Context";
 
 const HomeScreen = () => {
 
