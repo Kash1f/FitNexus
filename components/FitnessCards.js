@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Pressable, Image, ScrollView } from "react-nati
 import React from "react";
 import fitness from "../data/fitness";
 import { useNavigation } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const FitnessCards = () => {
 
@@ -17,6 +18,7 @@ const FitnessCards = () => {
      {/* For every item in our FitnessData we are going to render a pressable so that we can press on that card and move to the next screen */}
 
       {FitnessData.map((item, key) => (
+       
         <Pressable 
         //here we will provide the name of the screen to which we want to navigate 
         onPress={()=> navigation.navigate("Workout",{
@@ -30,6 +32,7 @@ const FitnessCards = () => {
 
           <Text style={styles.fitnessCardName}>{item.name}</Text>
         </Pressable>
+        
       ))}
       
     </View>
@@ -46,9 +49,10 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 350,
+    width: 320,
     height: 130,
     borderRadius: 7,
+    
   },
 
   fitnessCardName: {

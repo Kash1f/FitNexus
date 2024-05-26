@@ -34,4 +34,5 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# notes
 *.Notes.txt

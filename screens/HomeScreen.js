@@ -43,11 +43,10 @@ const HomeScreen = () => {
         <View style={{justifyContent:"center", alignItems:"center"}}>
         <Image
             style={{
-              width: "90%",
+              width: 320,
               height: 120,
               borderRadius: 7,
-            
-
+              marginTop:10
             }}
             source={{
               uri: "https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_842,ar_1.2,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/sku-card-widget/gold2.png",
@@ -67,21 +66,23 @@ const styles = StyleSheet.create({
     backgroundColor: "#CD853F",
     padding: 10,
     height: 200,
-    width: 415,
+    width: 360,
+    marginTop:-10
   },
 
   parentView:{
     flexDirection:'row',
     alignItems:'center',
     justifyContent:'space-between',
-    marginTop:20
+    marginTop:20,
   },
 
   textOne:{
     textAlign:'center',
     fontWeight:'bold',
     color:'white',
-    fontSize:18
+    fontSize:18,
+    marginRight:50
   },
 
   textTwo:{
@@ -95,25 +96,30 @@ const styles = StyleSheet.create({
     textAlign:'center',
     fontWeight:'bold',
     color:'white',
-    fontSize:18
+    fontSize:18,
+    marginRight:10
   },
 
   textFour:{
     color:"#D0D0D0",
+    textAlign:'center',
     marginTop:6,
-    fontSize:17
+    fontSize:17,
+    marginRight:10
 
   },
   textFive:{
     textAlign:'center',
     fontWeight:'bold',
     color:'white',
-    fontSize:18
+    fontSize:18,
+    marginLeft:20
   },
   textSix:{
     color:"#D0D0D0",
     marginTop:6,
-    fontSize:17
+    fontSize:17,
+    marginLeft:20
   }
 
 });
